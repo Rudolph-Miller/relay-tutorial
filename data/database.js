@@ -22,7 +22,7 @@ var hidingSpots = [];
 var turnsRemaining = 3;
 
 export function getHidingSpot(id) {
-  return hidingSpots.find(hs => hs.id === id)
+  return hidingSpots.find(hs => hs.id === id);
 }
 
 export function checkHidingSpotForTreasure(id) {
