@@ -1,5 +1,4 @@
 #!/usr/bin/env babel-node --optional es7.asyncFunctions
-'use strict';
 
 import fs from 'fs';
 import path from 'path';
@@ -13,8 +12,8 @@ async () => {
     console.error('ERROR: ', JSON.stringify(result.errors, null, 2));
   } else {
     fs.writeFileSync(
-        path.join(__dirname, '../data/schema.json'),
-        JSON.stringify(result, null, 2)
-        );
+      path.join(__dirname, '../data/schema.json'),
+      JSON.stringify(result, null, 2)
+    );
   }
 }();
